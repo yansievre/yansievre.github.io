@@ -1,9 +1,7 @@
 ### Site Settings ###
-title               : portfolYOU
+title               : Yansı Evre Yüksel
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      The multi-disciplinary wizard developer
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : yansievre/yansievre.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -23,26 +21,26 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : John Doe
+  name              : Yansı Evre Yüksel
   image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
+# behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
+  email             : yanevyuk@gmail.com
+# facebook          : your_username
+  github            : yansievre
 # gitlab            : your_username
-# instagram         : your_username
+  instagram         : yanevyuk
 # kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
+  linkedin          : yanevyuk
+# medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : your_username
+# twitter           : your_username
 # vimeo             : your_username
-# youtube           : your_channel_name
+  youtube           : unikalumo
 # keybase           : your_username
 
 
