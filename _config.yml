@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Yansı Evre Yüksel
 icon                : /assets/favicon.ico
-icon_size           : 24
+icon_size           : 32
 description         : >-
                       The multi-disciplinary wizard developer
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
