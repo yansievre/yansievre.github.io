@@ -14,7 +14,7 @@ a game developer fueled by a passion for video game design and development, stem
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
-<img src="/assets/Y2.png" width="200" height="200"/>
+<img style="vertical-align:middle" src="/assets/Y2.png" width="200" height="200"/> &larr; That's me
 
 <div class="row">
 {% include about/timeline.html %}
