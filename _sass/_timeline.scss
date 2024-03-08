@@ -13,7 +13,7 @@
     left: -4px;
     top: 0;
   }
-
+  
   .timeline-item {
     position: relative;
 
@@ -35,6 +35,27 @@
       margin: 40px;
       padding-bottom: 20px;
       border-bottom: 1px dashed $dark;
+      
+      .circular_image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: transparent;
+        /* commented for demo
+        float: left;
+        margin-left: 125px;
+        margin-top: 20px;
+        */
+
+        /*for demo*/
+        display:inline-block;
+        vertical-align:middle;
+      }
+
+      .circular_image img{
+        width:100%;
+      }
 
       .date {
         margin-top: -5px;
