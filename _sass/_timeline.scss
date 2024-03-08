@@ -37,18 +37,19 @@
       border-bottom: 1px dashed $dark;
 
       .image-cropper {
-        width: 64px;
-        height: 64px;
+        width: 48px;
+        height: 48px;
         position: relative;
         overflow: hidden;
         border-radius: 50%;
+        vertical-align: middle
       }
 
       img {
         display: inline;
         margin: 0 auto;
-        height: 100%;
-        width: auto;
+        height: auto;
+        width:  100%;
       }
       
       .date {
