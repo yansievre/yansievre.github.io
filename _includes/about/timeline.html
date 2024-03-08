@@ -3,17 +3,26 @@
     {% for item in site.data.timeline %}
       <div class="timeline-item">
         <div class="content">
-          <div style="height: auto">
-          <div style="float: left;" class="image-cropper">
+          <div style="float: start;vertical-align: baseline;position: relative;margin-right: 15px;margin-left: 5px;margin-block-end: 10px;margin-top: -6px;" class="image-cropper">
             <img src="{{ item.icon }}" class="rounded" alt="" />
           </div>
           <h2>{{ item.name }}</h2>
-          </div>
-          <h2>{{ item.title }}</h2>
+          <hr>
+          <h4>{{ item.title }}</h4>
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
           <p>{{ item.description }}</p>
         </div>
       </div>
     {% endfor %}
   </div>
+</div>
+
+<div class="content">
+  <div style="float: inline-start;vertical-align: baseline;position: relative;margin-right: 15px;margin-left: 5px;margin-block-end: 10px;margin-top: -6px;" class="image-cropper">
+    <img src="https://media.licdn.com/dms/image/C560BAQG3gsSOCuCvBA/company-logo_200_200/0/1634049492111/kolibri_games_logo?e=1718236800&amp;v=beta&amp;t=HFCHLPubLkDtHdnwm9oyvMyOxZliDJLutM7PJKOmths" class="rounded" alt="">
+  </div><h2>Kolibri Games, Berlin</h2>
+  <hr>
+  <h4>Unity Game Developer</h4>
+  <h6 class="date">April 2022 — Ongoing</h6>
+  <p>Mid-senior Unity Developer for Idle Miner Tycoon.</p>
 </div>
