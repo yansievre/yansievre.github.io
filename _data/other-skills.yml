@@ -12,16 +12,16 @@
 
 - name: Animating
   percentage: 70
-  color: success
+  color: warning
   
 - name: Communication
   percentage: 65
-  color: success
+  color: light
 
 - name: Krita/Photoshop
   percentage: 20
-  color: success
+  color: secondary
   
 - name: Blender
   percentage: 20
-  color: success
+  color: dark

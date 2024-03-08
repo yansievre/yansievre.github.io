@@ -4,7 +4,7 @@
 
 - name: C#
   percentage: 80
-  color:
+  color: success
 
 - name: Abstract Mathematics
   percentage: 75
@@ -12,17 +12,16 @@
   
 - name: Code Architecture
   percentage: 75
-  color: secondary
+  color: light
 
 - name: Editor Tools Development
   percentage: 70
-  color: secondary
+  color: dark
   
 - name: Unity VFX
   percentage: 70
-  color: success
+  color: danger
   
 - name: Lua (Roblox)
   percentage: 50
-  color: secondary
-  
+  color: success
