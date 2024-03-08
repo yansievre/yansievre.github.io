@@ -1,5 +1,6 @@
 ### Site Settings ###
 title               : Yansı Evre Yüksel
+icon                : Yansı Evre Yüksel
 description         : >-
                       The multi-disciplinary wizard developer
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
