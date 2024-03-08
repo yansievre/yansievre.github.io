@@ -6,12 +6,9 @@ weight: 3
 ---
 
 
-<div class="row">
-<img src="/assets/Y1.png" />
+<img style="float: right;margin:25px 25px" src="/assets/Y2.png" width="200" height="200"/>
 
 # **About Me**
-
-</div>
 
 <div>
 Hi, I am **{{ site.author.name }}** :wave:,<br>
