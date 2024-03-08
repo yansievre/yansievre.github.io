@@ -7,11 +7,10 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
+Hi, I am **{{ site.author.name }}** :wave:,<br>
+a game developer fueled by a passion for video game design and development, stemming from my mathematics background in Istanbul. From my early days animating characters in Roblox to my current role at Kolibri Games, I've immersed myself in various facets of game development. My journey has seen me develop core systems, create editor tools, and architect code with a focus on automation and intuitive design. I'm often sought after for my problem-solving skills and knack for understanding complex systems. With experience spanning multiple disciplines, I consider myself a multi-disciplinary wizard, capable of navigating pipelines and communicating effectively across departments. Let's collaborate to bring captivating worlds to life.
 <div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
+{% include about/skills.html title="Primary Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 

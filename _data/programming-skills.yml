@@ -1,11 +1,28 @@
-- name: HTML5/CSS3
+- name: Unity Development
   percentage: 90
   color: danger
 
-- name: Go
+- name: C#
   percentage: 80
   color:
 
-- name: Python
+- name: Abstract Mathematics
+  percentage: 75
+  color: info
+  
+- name: Code Architecture
+  percentage: 75
+  color: secondary
+
+- name: Editor Tools Development
   percentage: 70
   color: secondary
+  
+- name: Unity VFX
+  percentage: 70
+  color: success
+  
+- name: Lua (Roblox)
+  percentage: 50
+  color: secondary
+  
