@@ -36,15 +36,19 @@
       padding-bottom: 20px;
       border-bottom: 1px dashed $dark;
 
-      .img{
-        float: left;
-        margin-right: 5px;
-        vertical-align: middle;
+      .image-cropper {
         width: 64px;
         height: 64px;
-        border-radius: 50%; /* Modified*/
-        /*overflow:hidden;*/
-        background-color: blue;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
       }
       
       .date {
