@@ -6,7 +6,7 @@ color: primary
 description: A paper I wrote for the Philosophy of Probabilities
 ---
 
- <div id="adobe-dc-view"></div>
+ <div id="adobe-dc-view" style="aspect-ratio: 0.9; width: 100%;"></div>
   <script type="text/javascript">
    document.addEventListener("adobe_dc_view_sdk.ready", function()
    { 
@@ -16,11 +16,10 @@ description: A paper I wrote for the Philosophy of Probabilities
          content:  {location: {url: "/assets/paradox.pdf"}},
          metaData: {fileName: "paradox.pdf"}
      },
-  {embedMode: "FULL_WINDOW",
-defaultViewMode: "FIT_PAGE",
+  {embedMode: "SIZED_CONTAINER",
    showDownloadPDF: false,
    showPrintPDF: false,
-showAnnotationTools: false
+    showAnnotationTools: false
       }
 );
    });
