@@ -16,19 +16,19 @@
     {% for image in images %}
       {%- if forloop.first -%}
         <div class="carousel-item active">
-          {%- if image.lower().endswith('.mp4') -%}
-            <video autoplay loop src="{{ image }}" class="carousel"></video>
-          {%- else -%}
-            <img src="{{ image }}" class="carousel">
-          {%- endif -%}
+          {% if (".mp4" in image) %}
+          <video autoplay loop src="{{ image }}" class="carousel"></video>
+          {% else %}
+          <img src="{{ image }}" class="carousel" alt=""/>
+          {% endif %}
         </div>
       {%- else -%}
         <div class="carousel-item">
-          {%- if image.lower().endswith('.mp4') -%}
-            <video autoplay loop src="{{ image }}" class="carousel"></video>
-          {%- else -%}
-            <img src="{{ image }}" class="carousel">
-          {%- endif -%}
+          {% if (".mp4" in image) %}
+          <video autoplay loop src="{{ image }}" class="carousel"></video>
+          {% else %}
+          <img src="{{ image }}" class="carousel" alt=""/>
+          {% endif %}
         </div>
       {%- endif -%}
     {% endfor %}
