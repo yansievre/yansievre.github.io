@@ -16,7 +16,7 @@ description: A quick introduction to the popular JavaScript library.
       var adobeDCView = new AdobeDC.View({clientId: "011232bf214649aa9f2b069e5d88822f", divId: "adobe-dc-view"});
       adobeDCView.previewFile(
      {
-         content:  {location: {url: "assets/paradox.pdf">}},
+         content:  {location: {url: "assets/paradox.pdf"}},
          metaData: {fileName: "paradox.pdf"}
      });
    });
