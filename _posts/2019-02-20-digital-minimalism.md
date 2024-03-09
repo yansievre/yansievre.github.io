@@ -1,9 +1,9 @@
 ---
 title: An Explanation of The St. Petersburg Paradox and How to Interpret the Result
-tags: [React, JavaScript, Web Development]
+tags: [Mathematics, Paper, Research]
 style: border
 color: primary
-description: A quick introduction to the popular JavaScript library.
+description: A paper I wrote for the Philosophy of Probabilities
 ---
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 
