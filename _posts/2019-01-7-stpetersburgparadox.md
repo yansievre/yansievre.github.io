@@ -6,8 +6,6 @@ color: primary
 description: A paper I wrote for the Philosophy of Probabilities
 ---
 
-[See original paper here](https://drive.google.com/file/d/1zP2M-q5CHBy7oIcqDcIoyCcdPlkMO4PY/view?usp=sharing)
-
  <div id="adobe-dc-view"></div>
   <script type="text/javascript">
    document.addEventListener("adobe_dc_view_sdk.ready", function()
@@ -18,7 +16,7 @@ description: A paper I wrote for the Philosophy of Probabilities
          content:  {location: {url: "/assets/paradox.pdf"}},
          metaData: {fileName: "paradox.pdf"}
      },
-  {embedMode: "<FULL_WINDOW, SIZED_CONTAINER, IN_LINE OR LIGHT_BOX>",
+  {embedMode: "FULL_WINDOW",
 defaultViewMode: "FIT_PAGE",
    showDownloadPDF: false,
    showPrintPDF: false,
