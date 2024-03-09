@@ -4,24 +4,24 @@
   
 - name: Collaboration
   percentage: 90
-  color: success
+  color: warning
   
 - name: Research Skills
   percentage: 85
-  color: info
+  color: danger
 
 - name: Animating
   percentage: 70
-  color: warning
+  color: success
   
 - name: Communication
   percentage: 65
-  color: light
+  color: info
 
 - name: Krita/Photoshop
   percentage: 20
-  color: secondary
+  color: danger
   
 - name: Blender
   percentage: 20
-  color: dark
+  color: success

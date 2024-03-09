@@ -12,16 +12,16 @@
   
 - name: Code Architecture
   percentage: 75
-  color: light
+  color: warning
 
 - name: Editor Tools Development
   percentage: 70
-  color: dark
+  color: danger
   
 - name: Unity VFX
   percentage: 70
-  color: danger
+  color: success
   
 - name: Lua (Roblox)
   percentage: 50
-  color: success
+  color: info
