@@ -1,6 +1,6 @@
 ---
 name: Hexaria Animations
-tools: [Blender, Roblox]
+tools: [Animation, Blender, Roblox]
 image: /assets/hexariabanner.png
 description: Character Animation Showcase
 ---

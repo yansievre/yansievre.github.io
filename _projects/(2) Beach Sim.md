@@ -1,6 +1,6 @@
 ---
 name: Beach Simulator Animations
-tools: [Blender, Roblox]
+tools: [Animation, Blender, Roblox]
 image: /assets/beachsimlogo.jpg
 description: Character Animation Showcase
 ---
