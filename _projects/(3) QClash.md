@@ -1,7 +1,7 @@
 ---
 name: Q-Clash! Animations
 tools: [Blender, Roblox]
-image: /assets/qclashthumbnail./png
+image: /assets/qclashthumbnail.png
 description: Character Animation Showcase
 ---
 
