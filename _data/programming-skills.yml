@@ -1,10 +1,10 @@
 - name: Unity Development
   percentage: 90
-  color: danger
+  color: success
 
 - name: C#
   percentage: 80
-  color: danger
+  color: success
 
 - name: Abstract Mathematics
   percentage: 75

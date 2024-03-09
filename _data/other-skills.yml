@@ -1,14 +1,14 @@
 - name: Problem-Solving
   percentage: 95
-  color: danger
+  color: success
   
 - name: Collaboration
   percentage: 90
-  color: danger
+  color: success
   
 - name: Research Skills
   percentage: 85
-  color: danger
+  color: success
 
 - name: Animating
   percentage: 70
