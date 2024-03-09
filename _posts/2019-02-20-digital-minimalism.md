@@ -17,6 +17,13 @@ description: A paper I wrote for the Philosophy of Probabilities
      {
          content:  {location: {url: "/assets/paradox.pdf"}},
          metaData: {fileName: "paradox.pdf"}
-     });
+     },
+  {embedMode: "<FULL_WINDOW, SIZED_CONTAINER, IN_LINE OR LIGHT_BOX>",
+defaultViewMode: "FIT_PAGE",
+   showDownloadPDF: false,
+   showPrintPDF: false,
+showAnnotationTools: false
+      }
+);
    });
   </script>
