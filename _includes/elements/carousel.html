@@ -16,7 +16,9 @@
     {% for img in images %}
       {%- if forloop.first -%}
         <div class="carousel-item active">
-          {%- if ".mp4" in {{ img }} -%}
+          {%- if ".mp4" 
+          in 
+          {{ img }} -%}
           <video autoplay loop src="{{ img }}" class="carousel"></video>
           {%- else -%}
           <img src="{{ img }}" class="carousel" alt=""/>
