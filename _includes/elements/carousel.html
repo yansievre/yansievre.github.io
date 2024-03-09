@@ -14,11 +14,10 @@
 
   <div class="carousel-inner" style="aspect-ratio: 1.6; margin-bottom: 25px;">
     {% for img in images %}
+      {% capture fixed_name %} {{ img | downcase }} {% endcapture %}
       {%- if forloop.first -%}
         <div class="carousel-item active">
-          {%- if '.mp4' 
-          in 
-          {{ img }} -%}
+          {%- if fixed_name contains '.mp4' -%}
           <video autoplay loop src="{{ img }}" class="carousel"></video>
           {%- else -%}
           <img src="{{ img }}" class="carousel" alt=""/>
@@ -26,7 +25,7 @@
         </div>
       {%- else -%}
         <div class="carousel-item">
-          {%- if '.mp4' in {{ img }} -%}
+          {%- if fixed_name contains '.mp4' -%}
           <video autoplay loop src="{{ img }}" class="carousel"></video>
           {%- else -%}
           <img src="{{ img }}" class="carousel" alt=""/>
