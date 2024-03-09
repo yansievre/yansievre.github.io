@@ -9,7 +9,7 @@ description: Character Animation Showcase
 
 In Beach Simulator, my role involved creating character animations for each pet. You can see some of these below.
 
-{% assign carousel_id = 'beach' %}
+{% assign carousel_id = 'carouselId' %}
 {% capture carousel_images %}
 /assets/beachsim/37459511_original.gif
 /assets/beachsim/37459467_original.gif

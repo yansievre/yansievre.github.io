@@ -18,7 +18,7 @@ Q-CLASH is a first-person class-based action game
 In Q-CLASH!, my role involved creating character animations which included 1st person animations and 3rd person emote animations.
 
 ## 1st Person Animations
-{% assign carousel_id = '1stp' %}
+{% assign carousel_id = 'carouselId1' %}
 {% capture carousel_images %}
 /assets/qclash/1p/0tm87.mp4
 /assets/qclash/1p/1ab58fef49c0935af133a3dd5bf40fea.mp4
@@ -38,7 +38,7 @@ In Q-CLASH!, my role involved creating character animations which included 1st p
 {% include elements/carousel.html %}
 
 ## 3rd Person Animations
-{% assign carousel_id = '3stp' %}
+{% assign carousel_id = 'carouselId2' %}
 {% capture carousel_images %}
 /assets/qclash/3p/j9VMgYPQS9.gif
 /assets/qclash/3p/lcfzd.mp4

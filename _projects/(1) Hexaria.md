@@ -17,7 +17,7 @@ Welcome to Hexaria! We present to you a Card Game MMORPG with a twist. Use your 
 
 In Hexaria, my role involved creating character animations tailored specifically for each card. You can see some of these below.
 
-{% assign carousel_id = 'hex' %}
+{% assign carousel_id = 'carouselId' %}
 {% capture carousel_images %}
 /assets/hexaria/37248714_original.gif
 /assets/hexaria/37248725_original.gif
