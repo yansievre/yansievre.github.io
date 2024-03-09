@@ -15,7 +15,7 @@ description: A paper I wrote for the Philosophy of Probabilities
       var adobeDCView = new AdobeDC.View({clientId: "011232bf214649aa9f2b069e5d88822f", divId: "adobe-dc-view"});
       adobeDCView.previewFile(
      {
-         content:  {location: {url: "assets/paradox.pdf"}},
+         content:  {location: {url: "/assets/paradox.pdf"}},
          metaData: {fileName: "paradox.pdf"}
      });
    });
