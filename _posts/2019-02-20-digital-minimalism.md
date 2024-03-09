@@ -5,7 +5,6 @@ style: border
 color: primary
 description: A paper I wrote for the Philosophy of Probabilities
 ---
-<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 
 [See original paper here](https://drive.google.com/file/d/1zP2M-q5CHBy7oIcqDcIoyCcdPlkMO4PY/view?usp=sharing)
 
