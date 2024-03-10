@@ -11,7 +11,7 @@
 #theme-toggler:before {
   @include themed(content, "🌙", "🌞");
 }
-
+ 
 .navbar-themed {
   .navbar-icon {
     @include themed(filter, invert(100%), invert(0%));
