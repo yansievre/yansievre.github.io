@@ -1,7 +1,7 @@
 ---
 name: Plant Shop Tycoon
 tools: [Unity, C#, Mobile, Casual, Code Architecture]
-image: /assets/plantshopsplash.png
+image: /assets/plantshopsplash.jpg
 description: As lead developer for Plant Shop Tycoon, I established foundational systems.
 ---
 
