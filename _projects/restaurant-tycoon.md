@@ -1,4 +1,4 @@
-﻿---
+---
 name: Restaurant Empire Tycoon Idle
 tools: [Unity, C#, Mobile, Casual, Code Architecture]
 image: /assets/restaurantsplash.png
