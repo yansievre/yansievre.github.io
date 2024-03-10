@@ -1,4 +1,4 @@
-﻿---
+---
 name: Hoop Jump
 tools: [Unity, C#, Prototype, Mobile, Hyper-casual]
 image: /assets/hoopjumpsplash.png
