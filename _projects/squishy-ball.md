@@ -1,4 +1,4 @@
-﻿---
+---
 name: Squishy Ball
 tools: [Unity, C#, Prototype, Mobile, Hyper-casual]
 image: /assets/squishyballsplash.png
