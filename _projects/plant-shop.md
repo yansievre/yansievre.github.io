@@ -1,4 +1,4 @@
-﻿---
+---
 name: Plant Shop Tycoon
 tools: [Unity, C#, Mobile, Casual, Code Architecture]
 image: /assets/plantshopsplash.png
