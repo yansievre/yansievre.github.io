@@ -1,3 +1,13 @@
+@mixin themed($property, $light-value, $dark-value) {
+  [data-theme="light"] & {
+    #{$property}: $light-value;
+  }
+
+  [data-theme="dark"] & {
+    #{$property}: $dark-value;
+  }
+}
+
 .link-after {
   content: "";
   display: block;
@@ -26,6 +36,12 @@
     width: 100% !important;
     text-align: right;
   }
+}
+
+.navbar-icon {
+  vertical-align: middle;
+  margin: 0px 16px;
+  @include themed(filter, invert(0%), invert(100%));
 }
 
 .navbar-brand {
