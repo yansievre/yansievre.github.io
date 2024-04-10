@@ -1,0 +1,140 @@
+﻿- title: Rayman
+  text: "The iconic Rayman was introduced as a Super Manager in IMT as a crossover character. "
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "I was involved in the production process early on to help with determining the ability and VFX.",
+    "Research into existing character",
+    "Close collaboration with Art Department",
+    "Unique orbiting behaviour for particle effects."
+  ]
+  description: "Rayman produces money for each punch, the punches get faster for every active super manager."
+  img: /assets/kolibri/SM_Rayman.mp4
+
+- title: Ut'ux
+  text: "the Alien. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Collaboration with Art to ideate on VFX concepts",
+    "Experimenting with particle effects to create a 'gooey' effect without using shaders."
+  ]
+  description: "Stores cash in the hives, half the money is earned directly, the other half is deposited into the crate."
+  img: /assets/kolibri/SM_Utux.mp4
+
+- title: Sam Fisher
+  text: "Sam Fisher from Splinter Cell was introduced as a Super Manager in IMT as a crossover character. "
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Conception of the 'stealing' idea",
+    "Figuring out how to make this visual effect work without needing to create more animations for the character rig.",
+    "Implemented an 'elevator visuals override' system to easily assign different image assets for the elevator, selected based on a given priority , to ensure future abilities are easier to implement."
+  ]
+  description: "Steals money from the crates and deposits multiplied money to the elevator building."
+  img: /assets/kolibri/SM_SamFisher.mp4
+
+- title: Beiro
+  text: "the gentle giant. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Implemented a system to easily attach objects to parts of character, which was used for the orb's glow",
+    "Special attention to the code architecture and clean-up logic to ensure the money from snowballs is always earned; regardless of ability ending, game closing etc"
+  ]
+  description: "When resources are dropped into the crate, Beiroth sends a multiplied amount to the elevator building."
+  img: /assets/kolibri/SM_Beiro.mp4
+
+- title: Lord Beiroth
+  text: "the not-so-gentle giant. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "As a clone of Beiro, the logic was the same.",
+    "I implemented changes to allow a super manager to use the same effect logic while using different visuals.",
+  ]
+  description: "When resources are dropped into the crate, Beiroth sends a multiplied amount to the elevator building."
+  img: /assets/kolibri/SM_Beiroth.mp4
+
+- title: Luxario
+  text: "Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Triggered pulse effect for each drop",
+  ]
+  description: "Multiplies dropped resources"
+  img: /assets/kolibri/SM_Lux.mp4
+
+- title: Melody Rivers
+  text: "the Conductor. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Worked closely with Game Design to design an ability that reflects her music theme.",
+    "A system which takes multiple 4-note sequences, the notes are placed accordingly.",
+    "Pitched audio to play the notes as they appear. The entire sheet plays as a melody when a single sheet is completed. Later scrapped."
+  ]
+  description: "Composes a melody on the fullest crate, the money is earned when 4 notes are reached and the melody is complete. "
+  img: /assets/kolibri/SM_Melody.mp4
+
+- title: Chris Capella
+  text: "plays the Tuba. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "A simple and quick to implement manager to go along with Melody Rivers."
+  ]
+  description: "Increases the movement speed of warehouse workers by playing the Tuba."
+  img: /assets/kolibri/SM_ChrisCapella.mp4
+
+- title: Glimmer
+  text: "the Fairy. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Implemented a solution for mapping the movement speed to worker animation speed non-linearly.",
+    "Prioritized a mystic and hazy feel for the VFX."
+  ]
+  description: "Increases the working speed of the workers in her assigned and adjacent mineshafts."
+  img: /assets/kolibri/SM_Glimmer.mp4
+
+- title: Samantha Reiss
+  text: "Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Discussions with Game Design to determine the exact logic of her ability",
+    "Implemented a parabola utility to calculate the trajectory of the diamonds."
+  ]
+  description: "Boosts the production of her assigned mineshaft and the two buildings."
+  img: /assets/kolibri/SM_Sam.mp4
+
+- title: Marrena
+  text: "the Jellyfish Mermaid. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Closely working with Art to determine how the assets for the jellyfish should be produced.",
+  ]
+  description: "Earns cash directly when resources are dropped. Other active super managers increase the count of her jellyfish, which increases her multiplier."
+  img: /assets/kolibri/SM_Marrena.mp4
+
+- title: Ula Galvani
+  text: "the Environmental Activist. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Produced for participation in the Green Game Jam 2023",
+    "Usage of Unity's timeline system with custom implementations.",
+    "I recommended the ability idea to reflect her theme",
+  ]
+  description: "She boosts the workers, which gradually increases as the ocean is cleaned up."
+  img: /assets/kolibri/SM_Ula.mp4
+
+- title: Zephyria
+  text: "the Ancient Robot. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Usage of the 'elevator visuals override' system which made this implementation easier.",
+  ]
+  description: "Extracts cash from each crate and sends it to the warehouse."
+  img: /assets/kolibri/SM_Zephyria.mp4
+
+- title: Afi
+  text: "the Fire Dancer. Notable points:"
+  points: [
+    "Implementation of the character and ability logic in Unity",
+    "Worked with Game Design to come up with the ability design.",
+    "Recommended safety measures to Game Design to ensure the character is reliable. Due to being the first super manager which relies on chance."
+  ]
+  description: "At set intervals, selects a random mineshaft from the top three most earning mineshafts. That mineshaft receives a boost."
+  img: /assets/kolibri/SM_Afi.mp4

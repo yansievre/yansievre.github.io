@@ -8,6 +8,7 @@
   }
 }
 
+
 #theme-toggler:before {
   @include themed(content, "🌙", "🌞");
 }
@@ -34,3 +35,11 @@
   @include themed(background-color, $light, $dark);
 }
 
+.gradient-bg-themed {
+  background:
+          linear-gradient(0deg, rgba(var(--gradient-color), 0.5) 0%,  rgba(var(--gradient-color), 0) 100%);
+  background-blend-mode: normal;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  background-position-y: 500px;
+}

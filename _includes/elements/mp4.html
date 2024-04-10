@@ -1,0 +1,6 @@
+﻿<figure class="figure w-100">
+    <video muted autoplay loop src="{{ include.image  }}" type="video/mp4"></video>
+    {%- if include.caption -%}
+    <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
+    {%- endif -%}
+</figure>

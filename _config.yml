@@ -20,11 +20,24 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-
 ### Author Info ###
 author:
   name              : Yansı Evre Yüksel
-  image             : /assets/profImageSqr.png
+  images:
+    - /assets/photos/p1.png
+    - /assets/photos/pp2.png
+    - /assets/photos/p3.png
+    - /assets/photos/unikalumo.png
+    - /assets/photos/p2.png
+    - /assets/photos/pp1.png
+    - /assets/photos/p5.png
+    - /assets/photos/p6.png
+  gradient-default: '#41474a'
+  gradient-hover: 
+    - '#91005d'
+    - '#5e5e16'
+    - '#184a59'
+    - '#5e6e42'
 # behance           : your_username
 # dribbble          : your_username
   email             : yanevyuk@gmail.com

@@ -4,8 +4,34 @@
     <!-- Fine Circle Responsive Image -->
     <div id="container" class="my-2">
       <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+      <div id="element" class="wow animated zoomIn" data-wow-delay=".1s">
+        <!-- {% for img in site.author.images %}
+        {%- if forloop.first -%}
+        <img src="{{ img }}" alt="{{ site.title }}" class="circle-image">
+        {%- else -%}
+        <img src="{{ img }}" alt="{{ site.title }}" class="circle-image" hidden>
+        {%- endif -%}
+        {% endfor %}-->
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              {% for img in site.author.images %}
+              {% capture mod %}{{forloop.index0 | modulo: 2}}{% endcapture %}
+              {%- if mod == "0" -%}
+              <img src="{{ img }}" alt="{{ site.title }}" class="circle-image">
+              {%- endif -%}
+              {% endfor %}
+            </div>
+            <div class="flip-box-back">
+              {% for img in site.author.images %}
+              {% capture mod %}{{forloop.index0 | modulo: 2}}{% endcapture %}
+              {%- if mod == "1" -%}
+              <img src="{{ img }}" alt="{{ site.title }}" class="circle-image">
+              {%- endif -%}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -16,3 +42,81 @@
 
   </div>
 </div>
+
+
+
+<script type="text/javascript">
+  var element = document.getElementById("element");
+  var front = document.getElementsByClassName("flip-box-front").item(0);
+  var back = document.getElementsByClassName("flip-box-back").item(0);
+  var hoverColors = new Array("{{site.author.gradient-hover || join: '","'}}");
+  var currentFrontImageIndex = -1,
+          currentBackImageIndex = -1,
+          maxFrontImageIndex = 0,
+          maxBackImageIndex = 0,
+          frontImages = [],
+          backImages = [];
+  // prepares relevant variables to cycle throguh images
+
+  // prepares relevant variables to cycle throguh images
+  var setUp = function() {
+    frontImages = front.getElementsByClassName("circle-image");
+    backImages = back.getElementsByClassName("circle-image");
+    maxFrontImageIndex = frontImages.length;
+    maxBackImageIndex = backImages.length;
+    currentFrontImageIndex = 0;
+    currentBackImageIndex = 0;
+    for (i = 1; i < maxFrontImageIndex; i += 1) {
+      frontImages[i].hidden = true;
+    }
+    for (i = 1; i < maxBackImageIndex; i += 1) {
+      backImages[i].hidden = true;
+    }
+  };
+
+  function hexToRgbA(hex, a){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+      c= hex.substring(1).split('');
+      if(c.length== 3){
+        c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+      }
+      c= '0x'+c.join('');
+      return [(c>>16)&255, (c>>8)&255, c&255].join(',');
+    }
+    throw new Error('Bad Hex');
+  }
+
+  var updateFrontSide = function() {
+    currentFrontImageIndex = (currentFrontImageIndex >= maxFrontImageIndex - 1) ? 0 : currentFrontImageIndex += 1;
+    window.targetColor = hexToRgbA(hoverColors[currentFrontImageIndex], 1);
+
+    setTimeout(function(){
+      for (i = 0; i < maxFrontImageIndex; i += 1) {
+        frontImages[i].hidden = (i !== currentFrontImageIndex) ;
+      }
+    }, 200)
+  }
+
+  var updateBackSide = function() {
+    currentBackImageIndex = (currentBackImageIndex >= maxBackImageIndex - 1) ? 0 : currentBackImageIndex += 1;
+    var col = "{{site.author.gradient-default}}";
+    window.targetColor = hexToRgbA(col, 1);
+
+    setTimeout(function(){
+      for (i = 0; i < maxBackImageIndex; i += 1) {
+        backImages[i].hidden = (i !== currentBackImageIndex) ;
+      }
+    }, 200)
+  }
+
+  element.addEventListener("mouseenter", updateFrontSide);
+
+  element.addEventListener("mouseleave", updateBackSide);
+
+  setUp();
+
+  frontImages[currentFrontImageIndex].hidden = false; // show the first banner image;
+  backImages[currentBackImageIndex].hidden = false; // show the first banner image;
+
+</script>

@@ -17,9 +17,110 @@
 <!-- Adobe PDF Viewer -->
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 
+
 <!-- Initialize all tooltips -->
 <script>
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
+</script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<script>
+    var coll = document.getElementsByTagName("img");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].decode();
+    }
+</script>
+
+<script>
+    var r = document.querySelector(':root');
+
+    let intervalFrame;                  // <-- stores the interval frame
+
+    const animateGradient = function() {
+        if(intervalFrame === undefined) {
+            intervalFrame = setInterval(() => {
+                if(window.currentColor !== window.targetColor){
+                    window.currentColor = colorInterpolate( window.currentColor, window.targetColor, 8*(1/60));
+                    r.style.setProperty('--gradient-color',  window.currentColor);
+                }
+            }, 16.667); // 60 frames per second
+        }
+    };
+
+
+    function hexToRgb(hex){
+        var c;
+        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+            c= hex.substring(1).split('');
+            if(c.length== 3){
+                c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+            }
+            c= '0x'+c.join('');
+            return [(c>>16)&255, (c>>8)&255, c&255].join(',');
+        }
+        throw new Error('Bad Hex');
+    }
+    
+    function getRgb(color) {
+        let [r, g, b] = color
+            .split(',')
+            .map(str => Number(str));
+        return {
+            r,
+            g,
+            b
+        }
+    }
+
+    function colorInterpolate(colorA, colorB, intval) {
+        const rgbA = getRgb(colorA),
+            rgbB = getRgb(colorB);
+        const colorVal = (prop) =>
+            Math.round(rgbA[prop] * (1 - intval) + rgbB[prop] * intval);
+        return [
+            colorVal('r'),
+            colorVal('g'),
+            colorVal('b')
+        ].join(',')
+    }
+
+
+    function toArray(rgb) {
+        const r = rgb >> 16;
+        const g = (rgb >> 8) % 256;
+        const b = rgb % 256;
+
+        return [r, g, b];
+    }
+
+    // a function which is triggered following the `load` event
+    window.onload = function() {
+        if(window.currentColor == null){
+            window.currentColor = hexToRgb("{{site.author.gradient-default}}");
+            r.style.setProperty('--gradient-color',  window.currentColor);
+        }
+        if(window.targetColor == null)
+            window.targetColor = window.currentColor;
+        animateGradient();
+    };
 </script>
