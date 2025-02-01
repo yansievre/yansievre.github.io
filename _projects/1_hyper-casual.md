@@ -1,7 +1,7 @@
 ---
 name: Hypercasual Prototypes
 tools: [Unity, C#, Prototype, Mobile, Hyper-casual]
-image: /assets/hoopjumpsplash.png
+image: /assets/hypercasuals_img.png
 description: Prototypes I developed at Hero Games
 ---
 
