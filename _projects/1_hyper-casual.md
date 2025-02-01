@@ -2,7 +2,7 @@
 name: Hypercasual Prototypes
 tools: [Unity, C#, Prototype, Mobile, Hyper-casual]
 image: /assets/hoopjumpsplash.png
-description: Hyper-casual runner prototype
+description: Prototypes I developed at Hero Games
 ---
 
 # Hoop Jump
