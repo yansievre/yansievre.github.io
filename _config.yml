@@ -3,7 +3,7 @@ title               : Yansı Evre Yüksel
 icon                : /assets/favicon.ico
 icon_size           : 32
 description         : >-
-                       Unity Developer and Technical Artist
+                       Generalist Unity Developer
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : yansievre/yansievre.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
