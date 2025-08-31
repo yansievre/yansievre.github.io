@@ -5,6 +5,10 @@ image: /assets/animation-portfolio.png
 description: Character Animation Showcase
 ---
 
+# Animation Reel
+
+{% include elements/video.html id="3LWy1dWmrIg" %}
+
 # Hexaria Animations
 
 In Hexaria, my role involved creating character animations tailored specifically for each playable card. You can see some of these below.
