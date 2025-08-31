@@ -1,8 +1,8 @@
 ---
-name: Idle Miner Tycoon
+name: Gameplay Demos
 tools: [Unity, C#, VFX]
-image: /assets/imt-banner.jpg
-description: My work at Kolibri Games
+image: /assets/gameplaydemossplash.jpg
+description: A collection of gameplay prototypes and demos
 regenerate: true
 ---
 
