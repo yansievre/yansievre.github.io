@@ -20,8 +20,6 @@ and I've constructed my own set of configurations to achieve a similar result. S
 - Movement during attacks, whether based on initial direction or current input.
 - Animation curves to adjust attack timings directly in Unity
 
-Even with all of these settings, achieving a satisfying balance seemed rather difficult. 
-
 This experience has taught me that great gameplay, especially character controllers, comes from intricately integrating various disciplines and iterating constantly until everything clicks.
 
 {% include elements/video.html id="Yk2PdRQfA3o" %}
